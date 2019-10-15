@@ -1,0 +1,62 @@
+<resources>
+    <string name="app_name">WatchNext</string>
+
+    <string name="search_label">Search</string>
+    <string name="search_hint">Movies, tv shows and people…</string>
+
+    <string name="network_state_restored">Network Connection Restored</string>
+    <string name="network_state_disconnected">Network Connection Disconnected</string>
+
+    <string name="empty_content_title">Oops…</string>
+    <string name="empty_content_message">There is no content loaded to show</string>
+
+    <string name="movies">Movies</string>
+    <string name="tvshows">TV Shows</string>
+    <string name="people">People</string>
+    <string name="search">Search</string>
+    <string name="settings">Settings</string>
+    <string name="feedback">Feedback</string>
+
+    <string name="toggle_view">Toggle View</string>
+    <string name="download">Download</string>
+    <string name="share">Share</string>
+    <string name="home">Home</string>
+    <string name="default_settings">Default Settings</string>
+
+    <string name="credits">Credits</string>
+    <string name="movie_credits">Movie Credits</string>
+    <string name="tvshow_credits">Tv Show Credits</string>
+    <string name="similar_movies">Similar Movies</string>
+    <string name="similar_tvshows">Similar Tv Shows</string>
+
+    <string name="movie_title_placeholder">Star Wars: The Last Jedi</string>
+    <string name="movie_metadata1_placeholder">2017 \u2022 PG-13 (US) \u2022 152min</string>
+    <string name="movie_metadata2_placeholder">Fantasy, Adventure, Science Fiction, Action, Thriller, Mystery, Suspense, Comedy</string>
+    <string name="movie_overview_placeholder">Rey develops her newly discovered abilities with the guidance of Luke Skywalker, who is unsettled by the strength
+        of her powers. Meanwhile, the Resistance prepares to do battle with the First Order.
+    </string>
+
+    <string name="tvshow_name_placeholder">The Big Bang Theory</string>
+    <string name="tvshow_metadata1_placeholder">2017 \u2022 PG-13 (US) \u2022 152min</string>
+    <string name="tvshow_metadata2_placeholder">Fantasy, Adventure, Science Fiction, Action, Thriller, Mystery, Suspense, Comedy</string>
+    <string name="tvshow_overview_placeholder">The Big Bang Theory is centered on five characters living in Pasadena, California: roommates Leonard Hofstadter
+        and Sheldon Cooper; Penny, a waitress and aspiring actress who lives across the hall; and Leonard and Sheldon\'s equally geeky and socially awkward
+        friends and co-workers, mechanical engineer Howard Wolowitz and astrophysicist Raj Koothrappali. The geekiness and intellect of the four guys is
+        contrasted for comic effect with Penny\'s social skills and common sense.
+    </string>
+
+    <string name="person_name_placeholder">Chris Hemsworth</string>
+    <string name="person_credits_placeholder">The Avengers, Avengers: Age of Ultron, Thor, Doctor Strange, Thor: The Dark World, Thor: Ragnarok, Star
+        Trek, Star Trek Into Darkness
+    </string>
+    <string name="person_metadata1_placeholder">Born January 1, 1900</string>
+    <string name="person_metadata2_placeholder">Died December 31, 2000 (Age 100)</string>
+    <string name="person_metadata3_placeholder">Melbourne, Victoria, Australia</string>
+    <string name="person_biography_placeholder">Chris Hemsworth (born 11 August 1983) is an Australian actor. He is best known for his roles as Kim Hyde in the
+        Australian TV series Home and Away (2004) and as Thor in the Marvel Cinematic Universe films Thor (2011), The Avengers (2012), Thor: The Dark World
+        (2013) and Avengers: Age of Ultron (2015). He has also appeared in the science fiction action film Star Trek(2009), the thriller adventure A Perfect
+        Getaway (2009), the horror comedy The Cabin in the Woods (2012), the dark fantasy action film Snow White and the Huntsman (2012), the war film Red Dawn
+        (2012) and the biographical sports drama film Rush (2013).\n\nDescription above from the Wikipedia article Chris Hemsworth, licensed under CC-BY-SA,
+        full list of contributors on Wikipedia.
+    </string>
+</resources>

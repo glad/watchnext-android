@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="1dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="@drawable/ripple">
+    <ImageView
+            android:id="@+id/img_view"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            tools:srcCompat="@drawable/movie_poster_placeholder"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="ContentDescription" />
+
+    <TextView
+            android:textAppearance="@style/AppTheme.TextAppearance.Title"
+            android:id="@+id/txt_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            tools:text="@string/movie_title_placeholder"
+            app:layout_constraintTop_toTopOf="@id/img_view"
+            app:layout_constraintBottom_toTopOf="@id/txt_overview"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:layout_marginEnd="@dimen/activity_horizontal_margin"
+            app:layout_constraintStart_toEndOf="@+id/img_view" />
+
+    <TextView
+            android:textAppearance="@style/AppTheme.TextAppearance.Body"
+            android:id="@+id/txt_body"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            tools:text="@string/movie_overview_placeholder"
+            app:layout_constraintStart_toStartOf="@id/txt_title"
+            app:layout_constraintEnd_toEndOf="@id/txt_title"
+            app:layout_constraintTop_toBottomOf="@id/txt_title"
+            app:layout_constraintBottom_toBottomOf="@id/img_view"
+            android:maxLines="4"
+            android:ellipsize="end" />
+</android.support.constraint.ConstraintLayout>

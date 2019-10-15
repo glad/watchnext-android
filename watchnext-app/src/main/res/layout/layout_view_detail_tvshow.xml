@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swiperefresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <android.support.v4.widget.NestedScrollView
+                android:id="@+id/content_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/activity_vertical_margin">
+                <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="230dp"
+                        android:id="@+id/img_backdrop"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        android:scaleType="centerCrop"
+                        android:adjustViewBounds="true"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:foreground="@drawable/ripple"
+                        tools:srcCompat="@drawable/tvshow_backdrop_placeholder"
+                        tools:ignore="ContentDescription" />
+                <View android:layout_width="match_parent"
+                      android:layout_height="0dp"
+                      app:layout_constraintStart_toStartOf="@id/img_backdrop"
+                      app:layout_constraintTop_toTopOf="@id/img_backdrop"
+                      app:layout_constraintBottom_toBottomOf="@id/img_backdrop"
+                      app:layout_constraintEnd_toEndOf="@id/img_backdrop"
+                      android:background="@drawable/gradient_overlay_bottom" />
+                <ImageView
+                        android:id="@+id/img_poster"
+                        android:background="@drawable/image_border"
+                        android:layout_width="107dp"
+                        android:layout_height="160dp"
+                        android:adjustViewBounds="true"
+                        android:layout_marginStart="@dimen/activity_horizontal_margin"
+                        android:scaleType="centerInside"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:foreground="@drawable/ripple"
+                        tools:ignore="ContentDescription"
+                        tools:srcCompat="@drawable/tvshow_poster_placeholder"
+                        app:layout_constraintBottom_toBottomOf="@id/img_backdrop"
+                        app:layout_constraintStart_toStartOf="@id/img_backdrop"
+                        app:layout_constraintTop_toBottomOf="@+id/img_backdrop" />
+                <TextView
+                        android:textAppearance="@style/AppTheme.TextAppearance.Title"
+                        android:id="@+id/txt_name"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        tools:text="@string/tvshow_name_placeholder"
+                        app:layout_constraintTop_toBottomOf="@id/img_backdrop"
+                        app:layout_constraintEnd_toEndOf="@id/img_backdrop"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                        app:layout_constraintStart_toEndOf="@+id/img_poster"
+                        app:layout_constraintBottom_toTopOf="@+id/txt_metadata1" />
+                <TextView
+                        android:textAppearance="@style/AppTheme.TextAppearance.Metadata"
+                        android:id="@+id/txt_metadata1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        tools:text="@string/tvshow_metadata1_placeholder"
+                        app:layout_constraintTop_toBottomOf="@id/txt_name"
+                        app:layout_constraintBottom_toTopOf="@id/txt_metadata2"
+                        app:layout_constraintEnd_toEndOf="@+id/txt_name"
+                        app:layout_constraintStart_toStartOf="@+id/txt_name" />
+                <TextView
+                        android:textAppearance="@style/AppTheme.TextAppearance.Metadata"
+                        android:id="@+id/txt_metadata2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:maxLines="2"
+                        android:ellipsize="none"
+                        tools:text="@string/tvshow_metadata2_placeholder"
+                        app:layout_constraintBottom_toBottomOf="@id/img_poster"
+                        app:layout_constraintEnd_toEndOf="@+id/txt_name"
+                        app:layout_constraintStart_toStartOf="@+id/txt_name" />
+                <TextView
+                        android:textAppearance="@style/AppTheme.TextAppearance.Body"
+                        android:id="@+id/txt_overview"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        tools:text="@string/tvshow_overview_placeholder"
+                        app:layout_constraintStart_toEndOf="@+id/img_poster"
+                        app:layout_constraintStart_toStartOf="@id/img_poster"
+                        app:layout_constraintTop_toBottomOf="@id/img_poster"
+                        app:layout_constraintEnd_toEndOf="@+id/txt_metadata1"
+                        android:paddingBottom="16dp" />
+                <FrameLayout
+                        android:id="@+id/credits_container"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:nestedScrollingEnabled="true"
+                        android:paddingBottom="16dp"
+                        app:layout_constraintStart_toStartOf="@id/img_poster"
+                        app:layout_constraintTop_toBottomOf="@id/txt_overview"
+                        app:layout_constraintEnd_toEndOf="@id/txt_name" />
+                <FrameLayout
+                        android:id="@+id/similar_tvshows_container"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:nestedScrollingEnabled="true"
+                        app:layout_constraintStart_toStartOf="@id/img_poster"
+                        app:layout_constraintTop_toBottomOf="@id/credits_container"
+                        app:layout_constraintEnd_toEndOf="@id/txt_name" />
+            </android.support.constraint.ConstraintLayout>
+        </android.support.v4.widget.NestedScrollView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+    <include layout="@layout/layout_view_empty_content"
+             tools:visibility="gone" />
+</android.support.constraint.ConstraintLayout>

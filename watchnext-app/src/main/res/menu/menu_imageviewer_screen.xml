@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+      xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+            android:id="@+id/imageviewer_menuitem_home"
+            android:icon="@drawable/ic_nav_home"
+            android:title="@string/home"
+            app:showAsAction="always"
+            tools:ignore="AlwaysShowAction" />
+    <item
+            android:id="@+id/imageviewer_menuitem_download"
+            android:icon="@drawable/ic_action_download"
+            android:title="@string/download"
+            app:showAsAction="always"
+            tools:ignore="AlwaysShowAction" />
+    <item
+            android:id="@+id/imageviewer_menuitem_share"
+            android:icon="@drawable/ic_action_share"
+            android:title="@string/share"
+            app:showAsAction="always"
+            tools:ignore="AlwaysShowAction" />
+</menu>

@@ -1,0 +1,18 @@
+<resources>
+    <string name="reset_confirmation_message">Are you sure you want to reset settings to their defaults?</string>
+
+    <string name="cache_category_key">cache</string>
+    <string name="cache_category_title">Cache</string>
+
+    <string name="cache_age_title">Max Cache Age</string>
+    <string name="cache_age_summary">Maximum amount of time store cached content</string>
+
+    <string name="cache_size_title">Max Cache Size</string>
+    <string name="cache_size_summary">Maximum amount of storage to allocate for cached content</string>
+
+    <string name="misc_category_key">misc</string>
+    <string name="misc_category_title">Miscellaneous</string>
+
+    <string name="image_quality_title">Image Quality</string>
+    <string name="image_quality_summary">Picture quality of posters, backgrounds and profile images</string>
+</resources>

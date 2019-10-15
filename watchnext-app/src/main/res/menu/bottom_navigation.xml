@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+      xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+            android:id="@+id/nav_movies"
+            android:icon="@drawable/ic_nav_movies"
+            android:title="@string/movies"
+            app:showAsAction="always"
+            tools:ignore="AlwaysShowAction" />
+    <item
+            android:id="@+id/nav_tvshows"
+            android:icon="@drawable/ic_nav_tvshows"
+            android:title="@string/tvshows"
+            app:showAsAction="always"
+            tools:ignore="AlwaysShowAction" />
+    <item
+            android:id="@+id/nav_people"
+            android:icon="@drawable/ic_nav_people"
+            android:title="@string/people"
+            app:showAsAction="always"
+            tools:ignore="AlwaysShowAction" />
+</menu>

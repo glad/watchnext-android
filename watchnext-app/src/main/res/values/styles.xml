@@ -1,0 +1,99 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="AppTheme"
+           parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@color/colorBackground</item>
+        <item name="android:textColor">@color/colorTextPrimary</item>
+        <item name="android:textColorPrimary">@color/colorTextPrimary</item>
+        <item name="android:textColorSecondary">@color/colorTextSecondary</item>
+        <item name="android:textColorTertiary">@color/colorTextTertiary</item>
+        <item name="preferenceTheme">@style/PreferenceThemeOverlay.v14.Material</item>
+        <item name="android:alertDialogTheme">@style/DialogTheme</item>
+        <item name="android:dialogTheme">@style/DialogTheme</item>
+    </style>
+
+    <style name="DialogTheme"
+           parent="Theme.AppCompat.Dialog.Alert">
+        <item name="android:background">@color/colorBackgroundInverse</item>
+        <item name="android:textColor">@color/colorTextPrimaryInverse</item>
+        <item name="android:textColorPrimary">@color/colorTextPrimaryInverse</item>
+        <item name="android:textColorSecondary">@color/colorTextSecondaryInverse</item>
+        <item name="android:titleTextColor"
+              tools:targetApi="m">@color/colorTextPrimaryInverse
+        </item>
+        <item name="buttonBarButtonStyle">@style/AlertDialogButtonStyle</item>
+    </style>
+
+    <style name="AlertDialogButtonStyle"
+           parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:background">@color/colorBackgroundInverse</item>
+    </style>
+
+    <style name="SearchViewTheme"
+           parent="Base.V7.Widget.AppCompat.EditText">
+        <item name="android:textColorHint">@color/colorSearchViewHint</item>
+    </style>
+
+
+    <style name="AppTheme.TextAppearance">
+        <item name="android:textColor">@color/colorTextPrimary</item>
+        <item name="android:textColorPrimary">@color/colorTextPrimary</item>
+        <item name="android:textColorSecondary">@color/colorTextSecondary</item>
+        <item name="android:textColorTertiary">@color/colorTextTertiary</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:singleLine">false</item>
+    </style>
+
+    <style name="AppTheme.TextAppearance.NetworkState"
+           parent="AppTheme.TextAppearance">
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="AppTheme.TextAppearance.EmptyContentTitle"
+           parent="AppTheme.TextAppearance">
+        <item name="android:textColor">@color/colorTextPrimary</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="AppTheme.TextAppearance.EmptyContentMessage"
+           parent="AppTheme.TextAppearance">
+        <item name="android:textColor">@color/colorTextSecondary</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="AppTheme.TextAppearance.Title"
+           parent="AppTheme.TextAppearance">
+        <item name="android:textColor">@color/colorTitleText</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="AppTheme.TextAppearance.Metadata"
+           parent="AppTheme.TextAppearance">
+        <item name="android:textColor">@color/colorMetadataText</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="AppTheme.TextAppearance.Body"
+           parent="AppTheme.TextAppearance">
+        <item name="android:textColor">@color/colorBodyText</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:lineSpacingExtra">4sp</item>
+    </style>
+</resources>

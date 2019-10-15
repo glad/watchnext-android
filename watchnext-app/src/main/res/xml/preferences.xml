@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+            android:key="@string/cache_category_key"
+            android:title="@string/cache_category_title" />
+
+    <PreferenceCategory
+            android:key="@string/misc_category_key"
+            android:title="@string/misc_category_title" />
+</PreferenceScreen>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Strings used for search bar -->
+    <!-- This is the default button label in the system-wide search UI.
+         It is also used by the home screen's search "widget". It should be short -->
+    <string name="custom_search_go">Search</string>
+    <!-- Default hint text for the system-wide search UI's text field. [CHAR LIMIT=30] -->
+    <string name="custom_search_hint">Search\u2026</string>
+    <!-- SearchView accessibility description for search button [CHAR LIMIT=NONE] -->
+    <string name="custom_searchview_description_search">Search</string>
+    <!-- SearchView accessibility description for search text field [CHAR LIMIT=NONE] -->
+    <string name="custom_searchview_description_query">Search query</string>
+    <!-- SearchView accessibility description for clear button [CHAR LIMIT=NONE] -->
+    <string name="custom_searchview_description_clear">Clear query</string>
+    <!-- SearchView accessibility description for submit button [CHAR LIMIT=NONE] -->
+    <string name="custom_searchview_description_submit">Submit query</string>
+    <string name="custom_searchview_description_voice">Voice search</string>
+</resources>

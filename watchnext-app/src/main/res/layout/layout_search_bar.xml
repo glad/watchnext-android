@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        tools:ignore="ContentDescription">
+    <ImageView
+            android:id="@+id/btn_search"
+            style="?attr/actionButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_search" />
+    <view class="com.glad.watchnext.app.widget.SearchBarWidget$SearchBarEditText"
+          android:id="@+id/txt_query"
+          android:theme="@style/SearchViewTheme"
+          android:layout_width="0dp"
+          android:layout_height="match_parent"
+          android:focusable="true"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          android:paddingStart="?attr/actionBarSize"
+          android:paddingEnd="?attr/actionBarSize"
+          android:layout_weight="1"
+          android:layout_gravity="center_vertical"
+          android:singleLine="true"
+          android:ellipsize="end"
+          android:inputType="text|textAutoComplete|textNoSuggestions"
+          android:imeOptions="actionSearch"
+          tools:text="This is sample text" />
+    <ImageView
+            android:id="@+id/btn_close"
+            style="?attr/actionButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:clickable="true"
+            android:focusable="true"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:src="@drawable/ic_close" />
+</android.support.constraint.ConstraintLayout>
